@@ -1,0 +1,133 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+  background-color: #adcff0;
+  color: #333;
+}
+
+/* Header & footer styling */
+header, footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #f4f4f4;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 2em;
+}
+
+/* Table styles */
+table {
+  border-collapse: collapse;
+  width: 100%; /* Full width for responsiveness */
+  margin: 10px 0;
+}
+table, th, td {
+  border: 1px solid #444;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #eaeaea;
+  font-weight: bold;
+}
+
+/* Forms */
+form {
+  max-width: 600px;
+  margin: auto;
+  background: #fafafa;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+fieldset {
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background: #fff;
+}
+
+legend {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Submit button */
+input[type="submit"] {
+  width: auto;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Media styling */
+img, video, audio {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    margin: 10px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  input, select, textarea {
+    font-size: 16px; /* Easier typing on mobile */
+  }
+
+  input[type="submit"] {
+    width: 100%; /* Full-width button on mobile */
+  }
+}
