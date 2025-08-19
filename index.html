@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced HTML5 Content & Forms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content Showcase & Form</h1>
+  </header>
+
+  <main>
+    <!-- Section: Lists -->
+    <section>
+      <h2>Favorite Web Development Tools</h2>
+      <ul>
+        <li>Visual Studio Code</li>
+        <li>Git & GitHub</li>
+        <li>Chrome DevTools</li>
+      </ul>
+
+      <h3>Steps to Build a Simple Website</h3>
+      <ol>
+        <li>Plan the structure</li>
+        <li>Write semantic HTML</li>
+        <li>Style with CSS</li>
+        <li>Add interactivity with JavaScript</li>
+      </ol>
+    </section>
+
+    <!-- Section: Table -->
+    <section>
+      <h2>HTML5 Input Types Comparison</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Input Type</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>text</td>
+            <td>Basic single-line input</td>
+          </tr>
+          <tr>
+            <td>email</td>
+            <td>Validates email format</td>
+          </tr>
+          <tr>
+            <td>date</td>
+            <td>Selects a date from a calendar</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section: Media -->
+    <section>
+      <h2>Media Showcase</h2>
+      <img src="https://via.placeholder.com/300x150" alt="Sample Image">
+
+      <p>Sample Audio:</p>
+      <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <p>Sample Video:</p>
+      <video controls width="300">
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Section: Form -->
+    <section>
+      <h2>User Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" placeholder="John" required>
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" placeholder="Doe" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" minlength="4" maxlength="12" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" minlength="6" required>
+
+          <label for="confirm">Confirm Password:</label>
+          <input type="password" id="confirm" name="confirm" minlength="6" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+          </select>
+
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+          <label>
+            <input type="checkbox" name="terms" required> I agree to the terms and conditions
+          </label>
+        </fieldset>
+
+        <input type="submit" value="Register">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Assignment Demo</p>
+  </footer>
+
+</body>
+</html>
